@@ -1,0 +1,15 @@
+function abc(){
+var std=[{"sid":1, "sname":"venky", "m1":90, "m2":90, "m3":80, "m4":75, "m5":90, "m6":80, "total":0},
+         {"sid":2, "sname":"jai", "m1":90, "m2":90, "m3":80, "m4":75, "m5":90, "m6":80,"toatl":0},
+         {"sid":3, "sname":"shiva", "m1":90, "m2":90, "m3":80, "m4":75, "m5":90, "m6":80, "total":0},
+         {"sid":4, "sname":"raj", "m1":90, "m2":90, "m3":80, "m4":75, "m5":90, "m6":80,"total":0}
+}];
+std.forEach(function(val,ind){
+var t=val.m1+val.m2+val.m3+val.m4+val.m5+val.m6;
+val.total=t;
+console.log("name"+val.sname+"total"+val.total)
+}
+};
+call that function
+abc();
+o\p:400, 500, 600,508
