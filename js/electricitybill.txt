@@ -1,0 +1,23 @@
+function cal(n){
+var a=n;
+if(a<200){
+console.log("per unit price is=3.5 rupees")
+console.log("current bill amount is ="+a*3.5)
+}
+if(a>200&&a<400){
+console.log("per unit price is=4 rupees")
+console.log("current bill amount is ="+a*4+"rupees")
+}
+if(a>400&&a<600){
+console.log("per unit price is=6 rupees")
+console.log("current bill amount is ="+a*6+"rupees")
+}
+if(a>600){
+console.log("per unit price is=8 rupees")
+console.log("current bill amount is ="+a*8+"rupees")
+}
+}
+cal(350)
+undefined
+per unit price is=4 rupees debugger eval code:8:9
+current bill amount is =1400rupees

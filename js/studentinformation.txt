@@ -1,0 +1,56 @@
+var std=[{"sid":101, "sname":"venky", "m1":90, "m2":85, "m3":90, "m4":70, "m5":68, "m6":90},
+ 
+         {"sid":102, "sname":"jai", "m1":90, "m2":92, "m3":90, "m4":80, "m5":84, "m6":90},
+  
+        {"sid":103, "sname":"dora", "m1":85, "m2":81, "m3":50, "m4":70, "m5":68, "m6":90}, 
+     
+    {"sid":104, "sname":"phani", "m1":89, "m2":71, "m3":50, "m4":50, "m5":50, "m6":70},
+    
+     {"sid":105, "sname":"raj", "m1":80, "m2":61, "m3":55, "m4":60, "m5":50, "m6":60},
+
+{"sid":106, "sname":"vee", "m1":40, "m2":50, "m3":50, "m4":30, "m5":35, "m6":30}];
+
+std.forEach(function(val,ind){
+  
+  var sum=0;
+  
+   sum=val.m1+val.m2+val.m3+val.m4+val.m5+val.m5+val.m6;
+ 
+ if(sum>500){
+ 
+  console.log(val.sid+" " +val.sname+" grade is A");
+
+  }
+
+if(sum<500&&sum>400){
+
+    console.log(val.sid+ " "+val.sname+" grade is B");
+
+}
+
+if(sum<400&&sum>300){
+
+   console.log(val.sid+" " +val.sname+" grade is C");
+
+}
+
+if(sum<300){
+
+console.log(val.sid+ " "+val.sname+"  faile")
+;
+}
+
+ });
+
+
+o\p:
+101 venky grade is A
+
+ 102 jai grade is A
+
+ 103 dora grade is A
+
+ 104 phani grade is B
+
+105 raj grade is B
+ 106 vee  faile
