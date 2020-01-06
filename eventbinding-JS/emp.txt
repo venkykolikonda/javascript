@@ -1,0 +1,15 @@
+var emp={"eid":101, "ename":"venky", "esalary":0,
+            "position":function(x){
+                  if(x>50000)
+                  console.log(teamleader)
+                   if(x>30000)
+                  console.log(senior devloper)
+                  if(x>10000)
+                  console.log(Associate devoloper)
+                 };
+           call this function
+
+              emp.functiom(50000)
+           o\p:teamleader
+               emp.function(10000)
+           o\p:Associate Devoloper

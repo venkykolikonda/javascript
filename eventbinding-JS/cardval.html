@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Card-Val</title>
+        <link rel="icon" href="balaya.png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="card text-white bg-primary mb-3 text-center mt-5" style="max-width: 50rem; margin-left: 300px;">
+            <div class="card-header"><button class="btn" onclick="show()">venky</button></div>
+            <div class="card-body">
+                <h5 class="card-title">UI_Developer</h5>
+                <p class="card-text" id="ven"><strong>Event binding</strong>event binding:Html events are things that happend to
+                    HTML elements
+         * an HTML web page has finished Loading
+         *an HTML INPUTS field changed 
+         *an HTML button was clicked
+     it can be divided into two types
+     1.keyboard 2.mouse click</p>
+            </div>
+        </div>
+        <div class="card text-white bg-secondary mb-3 text-center" style="max-width: 50rem; margin-left: 300px;">
+            <div class="card-header"><button class="btn" onclick="sho()">Dorababu</button></div>
+            <div class="card-body">
+                <h5 class="card-title">UI-Developer</h5>
+                <p class="card-text" id="ve"><strong>Event-binding</strong>event binding:Html events are things that happend to
+                    HTML elements
+         * an HTML web page has finished Loading
+         *an HTML INPUTS field changed 
+         *an HTML button was clicked
+     it can be divided into two types
+     1.keyboard 2.mouse click </p>
+            </div>
+        </div>
+        <div class="card text-white bg-success mb-3 text-center" style="max-width: 50rem; margin-left: 300px;">
+            <div class="card-header"><button class="btn" onclick="sh()">Jai</button></div>
+            <div class="card-body">
+                <h5 class="card-title">UI-Developer</h5>
+                <p class="card-text" id="v"><strong>Event-binding</strong> event binding:Html events are things that happend to
+                    HTML elements
+         * an HTML web page has finished Loading
+         *an HTML INPUTS field changed 
+         *an HTML button was clicked
+     it can be divided into two types
+     1.keyboard 2.mouse click</p>
+            </div>
+        </div>
+        <script>
+        function show(){
+            document.getElementById("ven").classList.add("d-none")
+        }
+        function sho(){
+            document.getElementById("ve").classList.add("d-none")
+        }
+        function sh(){
+            document.getElementById("v").classList.add("d-none")
+        }
+        </script>
+    </body>
+</html>

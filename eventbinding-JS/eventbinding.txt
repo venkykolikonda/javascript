@@ -1,0 +1,16 @@
+event binding:Html events are things that happend to
+               HTML elements
+    * an HTML web page has finished Loading
+    *an HTML INPUTS field changed 
+    *an HTML button was clicked
+it can be divided into two types
+1.keyboard 
+2.mouse click
+===>key board:1.onkeypress
+              2.onkeyup
+              3.onkeydown
+===>mouse click:1.onclick
+                2.onmouseover
+                3.onmouseout
+                4.onload
+                5.onchange
