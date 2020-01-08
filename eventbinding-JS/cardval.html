@@ -18,7 +18,7 @@
     </head>
     <body>
         <div class="card text-white bg-primary mb-3 text-center mt-5" style="max-width: 50rem; margin-left: 300px;">
-            <div class="card-header"><button class="btn" onclick="show()">venky</button></div>
+            <div class="card-header"><button class="btn" onclick="show('ven')">venky</button></div>
             <div class="card-body">
                 <h5 class="card-title">UI_Developer</h5>
                 <p class="card-text" id="ven"><strong>Event binding</strong>event binding:Html events are things that happend to
@@ -31,7 +31,7 @@
             </div>
         </div>
         <div class="card text-white bg-secondary mb-3 text-center" style="max-width: 50rem; margin-left: 300px;">
-            <div class="card-header"><button class="btn" onclick="sho()">Dorababu</button></div>
+            <div class="card-header"><button class="btn" onclick="show('ve')">Dorababu</button></div>
             <div class="card-body">
                 <h5 class="card-title">UI-Developer</h5>
                 <p class="card-text" id="ve"><strong>Event-binding</strong>event binding:Html events are things that happend to
@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="card text-white bg-success mb-3 text-center" style="max-width: 50rem; margin-left: 300px;">
-            <div class="card-header"><button class="btn" onclick="sh()">Jai</button></div>
+            <div class="card-header"><button class="btn" onclick="show('v')">Jai</button></div>
             <div class="card-body">
                 <h5 class="card-title">UI-Developer</h5>
                 <p class="card-text" id="v"><strong>Event-binding</strong> event binding:Html events are things that happend to
@@ -57,14 +57,17 @@
             </div>
         </div>
         <script>
-        function show(){
-            document.getElementById("ven").classList.add("d-none")
-        }
-        function sho(){
-            document.getElementById("ve").classList.add("d-none")
-        }
-        function sh(){
-            document.getElementById("v").classList.add("d-none")
+        function show(elid){
+         var a=document.getElementById(elid).classList
+         console.log(a)
+         a.forEach(function(val,index){
+             if(val!="d-none"){
+             a.add("d-none")
+             }
+             else{
+                 a.remove("d-none")
+             }
+         })
         }
         </script>
     </body>
