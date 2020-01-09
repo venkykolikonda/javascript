@@ -1,7 +1,6 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,intial-scale=1.0">
         <title>login</title>
         <link rel="icon" href="balaya.png">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -25,11 +24,11 @@
         <div class="container mt-5 form-group">
             <div>
                 <span>username</span>
-                <input type="text" class="form-control" placeholder="enter name" id="a">
+                <input type="text" class="form-control" placeholder="entername" id="abc">
             </div>
             <div>
                 <span>password</span>
-                <input type="text" class="form-control" placeholder="enter name" id="b">
+                <input type="text" class="form-control" placeholder="entername" id="bgx">
             </div>
             <div class="mt-4">
                 <button class="btn btn-primary" onclick="ven()">submit</button>
@@ -38,15 +37,15 @@
         </div>
         <script>
         function ven(){
-           var pass=document.getElementById("a").value
-           var user=document.getElementById("b").value
-           if(user==" "||pass==" "){
+           var pass=document.getElementById("abc").value
+           var user=document.getElementById("bgx").value
+           if(user==''||pass==''){
                document.getElementById("xyz").classList.remove("d-none")
            }
         }
         function vee(){
-            document.getElementById("a").value=" "
-           document.getElementById("b").value=" "
+            document.getElementById("abc").value=""
+           document.getElementById("bgx").value=""
         }
         function rem(){
             document.getElementById("xyz").classList.add("d-none")
