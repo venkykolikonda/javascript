@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>vbm</title>
+        <link rel="icon" href="b">
+    </head>
+    <body>
+        <input type="number" name="" id="input-container">
+        <button onclick="famstrong()">find</button>
+        <script>
+        function famstrong(){
+            var num=document.getElementById("input-container").value;
+            //num.parseInt();
+            var sum=0;
+            var store=num;
+            var lastdigit;
+            while(num!=0){
+                 lastdigit=num%10;
+                sum=sum+(lastdigit*lastdigit*lastdigit);
+                num=num/10;
+                num=parseInt(num);
+            }
+            if(store==sum){
+                alert(store+"given number is amstrong number")
+            }
+            else{
+                console.log(store+"given number is not amstrong")
+            }
+            document.getElementById("input-container").value=""
+        }
+        </script>
+    </body>
+</html>

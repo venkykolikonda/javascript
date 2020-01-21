@@ -17,9 +17,10 @@
             crossorigin="anonymous"></script>
     </head>
     <body>
+
         <div class="container mt-5" id="inp-user">
             <input type="text" placeholder="sid">
-            <input type="text" placeholder="nmae">
+            <input type="text" placeholder="name">
             <input type="text" placeholder="m1">
             <input type="text" placeholder="m2">
             <input type="text" placeholder="m3">
@@ -29,7 +30,7 @@
             <button class="btn btn-primary" onclick="vee()">reset</button>
         </div>
         <table class="table table-striped table-hover table-bordered bg-dark container text-white mt-5">
-            <thead>
+            <thead id="table-head">
                 <tr>
                     <th>sid</th>
                     <th>sname</th>
@@ -38,28 +39,46 @@
                     <th>m3</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="table-header">
                 <tr>
                     <td>101</td>
                     <td>venky</td>
                     <td>80</td>
                     <td>90</td>
-                    <td>50</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Jai</td>
+                    <td>90</td>
+                    <td>90</td>
+                    <td>90</td>
                 </tr>
             </tbody>
         </table>
-        <script>
-         function ven(){
-            var a=document.getElementById("inp-user").children
-            var q=a[0].value
-            var w=document.createTextNode(q)
-            var td=document.createElement('td')
-        var td1= td.appendChild(w)
-        var tr=document.createElement('tr')
-            tr.appendChild('td1')
-            var table=document.getElementsByTagName('table')[0]
-            table.appendChild('tr')
-         }
-        </script>
-    </body>
+           </body>
+
+           <script>
+               var a;
+               var f = "";
+               f=document.getElementById("table-header").innerHTML;
+            function ven(){
+                a=document.getElementById("inp-user").children;
+                 f=f+"<tr>";
+                  for(var i=0;i<a.length;i++){
+                   f+="<td>"+a[i].value+"</td>";
+               }
+               f=f+"</tr>"
+               document.getElementById("table-header").innerHTML=f;
+            }
+            function vee(){
+               var b=document.getElementById("inp-user").children;
+              for(var i=0;i<b.length;i++){
+                  var re=b[i].value=""
+              }
+        
+            }
+           </script>
+
+   
 </html>
