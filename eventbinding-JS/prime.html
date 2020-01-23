@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>prime number or not</title>
+    <link rel="icon" href="balaya.png">
+</head>
+<body>
+    <h2>Prime Number</h2>
+   <h4>Cheack Weather Given number prime number Or not</h4>
+   <hr style="color: green;">
+    <form name="myform">
+        <span>Enter a number</span>
+        <input type="text" id="user-input">
+        <br>
+        <input type="button" value="cheack"  onclick="cheackprime()" style="margin-left: 50px;">
+    </form>
+    <script>
+    function cheackprime(){
+        var n ;count=0;
+        n=document.getElementById("user-input").value
+       for(var i=2;i<=n-1;i++){
+           if(n%i==0){
+            count++;
+               
+           }
+       }
+       if(count==0){
+           alert("given number is prime")
+       }
+       else{
+           alert("not a prime number")
+       } 
+        
+    }
+    </script>
+</body>
+</html>

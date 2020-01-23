@@ -22,8 +22,9 @@
     <body>
         <div class="card mt-5 container  text-dark" id="card-container">
         </div>
-        <div class="container">
+        <div class="container mt-5">
             <button class="btn btn-primary btn-block" onclick="add()">Add</button>
+            <button class="btn btn-primary btn-block" onclick="remove()">remove</button>
         </div>
         <script>
             var cn = 0;
@@ -36,17 +37,12 @@
                 ad+="<div class='card-header'>"+val+"</div>";
             })
             document.getElementById("card-container").innerHTML=ad;
-            cn=1;
-            }
-            else{
-            var c=document.getElementById("card-container").classList
-            if(c.contains("d-none")){
-                c.remove("d-none")
-            }
-            else{
-                c.add("d-none")
-            }
-        }}
+                cn=1
+            }   
+        }
+        function remove(){
+           document.getElementById('card-container').innerHTML=''
+        }
         </script>
     </body>
 </html>
